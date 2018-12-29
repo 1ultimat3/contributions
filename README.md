@@ -12,16 +12,19 @@ Finding descriptions and corresponding issues are listed for each project.
 
 ### Settings
 For each target:
-* External attacker (no owner, or special privileges against contract)
-* 1,000,000 transactions are generated for this open source contributions.
-* Galactuzz is configured to use whitebox- and blackbox data to generate transactions.
-* Historical chain data and transactions against the target contracts are brought in.  
+* External attacker (no owner or special privileges)
+* 1,000,000 transaction limit
+* Mixed whitebox- and blackbox-approach, data is generated based on:
+  * historical chain data and transactions
+  * smart contract (Solidity only)
+  * common payloads
+  * random and mutated data (zzuf)
 
 ### Overview
 | Project  | #Vulns  | Coverage  |  Blocknumber |
 |---|---|---|---|
 | OasisDex (old)  | 0  |  44.97% | 6809217 |
-| Metronome | 0  |  | 6809217 |
+| Metronome |   |  | 6809217 |
 | TokenStore  |   |   | 6809217  |
 | Dex.top  |   |   |  6809217 |
 | Switcheo  |   |   |  6809217 |
