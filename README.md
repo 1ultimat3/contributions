@@ -33,8 +33,8 @@ For each target:
 
 
 ### Which vulnerabilities are covered?
-We will refer weaknesses according to the [Smart Contract Weakness Classification Registry](https://github.com/SmartContractSecurity/SWC-registry)
-The following table lists weaknesses targeted by [Galactuzz](https://github.com/Ethermat/galactuzz):
+We refer to weaknesses according to the [Smart Contract Weakness Classification Registry](https://github.com/SmartContractSecurity/SWC-registry)
+The following table lists weaknesses targeted by [Galactuzz](https://github.com/Ethermat/galactuzz) with respect to the Open Source contributions context:
 
 | SWC  | Description  | Support  |  
 |---|---|---|
