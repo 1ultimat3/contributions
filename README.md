@@ -21,20 +21,20 @@ For each target:
   * random and mutated data (zzuf)
 
 ### Overview
-| Project  | #Vulns  | Coverage  |  Blocknumber |
-|---|---|---|---|
-| OasisDex (old)  | 0  |  44.97% | 6809217 |
-| Metronome |   |  | 6809217 |
-| TokenStore  |   |   | 6809217  |
-| Dex.top  |   |   |  6809217 |
-| Switcheo  |   |   |  6809217 |
-| LocalEthereum  |   |   |  6809217 |
-| Gods Unchained (GODS)  |   |   | 6809217  |   
+| Project  | #Vulns  | Coverage  |  Blocknumber | Address |
+|---|---|---|---|---|
+| OasisDex (old)  | 0  |  45.47% | 6809217 | 0x14fbca95be7e99c15cc2996c6c9d841e54b79425 |
+| Metronome |   |  | 6809217 | |
+| TokenStore  |   |   | 6809217  | 	0x1cE7AE555139c5EF5A57CC8d814a867ee6Ee33D8|
+| Dex.top  |   |   |  6809217 | |
+| Switcheo  |   |   |  6809217 | |
+| LocalEthereum  |   |   |  6809217 | |
+| Gods Unchained (GODS)  |   |   | 6809217  |  0x6EbeAf8e8E946F0716E6533A6f2cefc83f60e8Ab |  
 
 
 ### Which vulnerabilities are covered?
-We refer to weaknesses according to the [Smart Contract Weakness Classification Registry](https://github.com/SmartContractSecurity/SWC-registry)
-The following table lists weaknesses targeted by [Galactuzz](https://github.com/Ethermat/galactuzz) with respect to the Open Source contributions context:
+We refer to weaknesses according to the [Smart Contract Weakness Classification Registry](https://github.com/SmartContractSecurity/SWC-registry).
+The following table lists weaknesses targeted by [Galactuzz](https://github.com/Ethermat/galactuzz) in terms of the Open Source contributions:
 
 | SWC  | Description  | Support  |  
 |---|---|---|
