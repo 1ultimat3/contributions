@@ -4,9 +4,12 @@ Ethermat's open sourced security audit results are captured in this repo. In cas
 ## Manual Analysis
 Finding descriptions and corresponding issues are listed for each project.
 
-###  WallETH: Libre Android Ethereum wallet
+### WallETH: Libre Android Ethereum wallet
 * [Keystore Insufficiently Protected](https://github.com/walleth/walleth/issues/319)
 * [Intent Crashes App (Denial of Service)](https://github.com/walleth/walleth/issues/318)
+
+### Solc: Fuzzing
+* [Fuzzing solc using AFL & Libfuzzer](https://github.com/Ethermat/solc-fuzzing)
 
 ## Fuzzing Results (Galactuzz)
 
@@ -23,13 +26,8 @@ For each target:
 ### Overview
 | Project  | #Vulns  | Coverage  |  Blocknumber | Address |
 |---|---|---|---|---|
-| OasisDex (old)  | 0  |  45.47% | 6809217 | 0x14fbca95be7e99c15cc2996c6c9d841e54b79425 |
-| Metronome |   |  | 6809217 | |
-| TokenStore  |   |   | 6809217  | 	0x1cE7AE555139c5EF5A57CC8d814a867ee6Ee33D8|
-| Dex.top  |   |   |  6809217 | |
-| Switcheo  |   |   |  6809217 | |
-| LocalEthereum  |   |   |  6809217 | |
-| Gods Unchained (GODS)  |   |   | 6809217  |  0x6EbeAf8e8E946F0716E6533A6f2cefc83f60e8Ab |  
+| OasisDex (old)  | 0  |  45.53% | 6809217 | 0x14fbca95be7e99c15cc2996c6c9d841e54b79425 |
+|  |   |   |  |  |  
 
 
 ### Which vulnerabilities are covered?
