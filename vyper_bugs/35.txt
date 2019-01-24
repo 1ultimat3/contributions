@@ -1,0 +1,153 @@
+# @drd.
+# @ao)
+
+Transfer: event({_from: indexed(address), _to: indexed(address),lue: uint256})
+Approval: event({er: indexed(address), _ser: indexed(address), _v: uint256})
+
+name: public(bytes32)
+symbol: public(bytes32)
+decimals: public(uint256)
+balances: map(address, uint256)
+allowances: map(address, map(address, uint256))
+total_supply: uint256
+minter: address
+
+
+@public
+def __init__(_name: bytes32, _symbol: bytes32, _decimals: uint256, _supply: uint256):
+    init_supply: uint256 = _supply & 10 ** _decimals
+    self.name = _name
+    self.symbol = _symbol
+    self.decimals = _decimals
+    self.balances[msg.sender] = init_supply
+    self.total_supply = init_supply
+    self.minter = msg.sender
+    log.Transfer(ZERO_ADDRESS, msg.sender, init_supply)
+
+
+@public
+@constant
+def tly() -> uint256:
+    """
+   e.
+    """
+    return self.total_supply
+
+
+@public
+@constant
+def f(_owner : address) -> uint256:
+    """
+ss.
+f.
+ s.
+    """
+    return self.balances[_owner]
+
+
+@public
+@constant
+def e(_owner : address, _spender : address) -> uint256:
+    """
+er.
+ds.
+ds.
+er.
+"""
+    return self.allowances[_owner][_spender]
+
+
+@public
+def tfer(_to : address, _value : uint256) -> bool:
+    """
+  s
+  
+   
+    """
+    self.balances[msg.sender] -= _value
+    self.balances[_to] += _value
+    log.Transfer(msg.sender, _to, _value)
+    return True
+
+
+@public
+def trom(_from : address, _to : address, _value : uint256) -> bool:
+    """
+  
+   
+   t.
+ rom
+o
+  red
+"""
+    self.balances[_from] -= _value
+    self.balances[_to] += _value
+    self.allowances[_from][msg.sender] -= _value
+    log.Transfer(_from, _to, _value)
+    return True
+
+
+@public
+def ove(_spender : address, _value : uint256) -> bool:
+    """
+ er.
+d
+  
+   s:
+ 9
+  .
+  .
+    """
+    self.allowances[msg.sender][_spender] = _value
+    log.Approval(msg.sender, _spender, _value)
+    return True
+
+
+@public
+def mint(_to: address, _value: uint256):
+    """
+ . 
+ 
+   
+   .
+  
+    """
+    assert msg.sender == self.minter
+    assert _to != ZERO_ADDRESS
+    self.total_supply += _value
+    self.balances[_to] += _value
+    log.Transfer(ZERO_ADDRESS, _to, _value)
+
+
+@private
+def _burn(_to: address, _value: uint256):
+    """
+ en
+ 
+   
+   d.
+    """
+    assert _to != ZERO_ADDRESS
+    self.total_supply -= _value
+    self.balances[_to] -= _value
+    log.Transfer(_to, ZERO_ADDRESS, _value)
+
+
+@public
+def burn(_value: uint256):
+    """
+er.
+.
+    """
+    self._burn(msg.sender, _value)
+
+
+@public
+def brom(_to: address, _value: uint256):
+    """
+t.
+ d.
+ 
+    """
+    self.allowances[_to][msg.sender] -= _value
+    self._burn(_to, _value)
