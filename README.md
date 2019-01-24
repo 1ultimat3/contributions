@@ -8,6 +8,21 @@ Finding descriptions and corresponding issues are listed for each project.
 * [Keystore Insufficiently Protected](https://github.com/walleth/walleth/issues/319)
 * [Intent Crashes App (Denial of Service)](https://github.com/walleth/walleth/issues/318)
 
+### Vyper: Fuzzing
+* Different error handling issues (which can lead to DoS or information disclosure) have been identified:
+ 1. https://github.com/ethereum/vyper/issues/1184
+ 2. https://github.com/ethereum/vyper/issues/1185
+ 3. https://github.com/ethereum/vyper/issues/1186
+ 4. https://github.com/ethereum/vyper/issues/1188
+ 5. https://github.com/ethereum/vyper/issues/1189
+ 6. https://github.com/ethereum/vyper/issues/1190
+ 7. https://github.com/ethereum/vyper/issues/1191
+ 8. https://github.com/ethereum/vyper/issues/1192
+ 9. https://github.com/ethereum/vyper/issues/1193
+ 10. https://github.com/ethereum/vyper/issues/1194
+ 11. https://github.com/ethereum/vyper/issues/1195
+ 12. https://github.com/ethereum/vyper/issues/1196
+
 ### Solc: Fuzzing
 * [Fuzzing solc using AFL & Libfuzzer](https://github.com/Ethermat/solc-fuzzing)
 
