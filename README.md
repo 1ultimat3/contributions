@@ -26,7 +26,7 @@ For each target:
 ### Overview
 | Project  | #Vulns  | Coverage  |  Blocknumber | Address |
 |---|---|---|---|---|
-| OasisDex (old)  | 0  |  45.53% | 6809217 | 0x14fbca95be7e99c15cc2996c6c9d841e54b79425 |
+| [OasisDex (old)](https://github.com/Ethermat/contributions/tree/master/targets/oasisdex)  | 0  |  46 % | 6809217 | 0x14fbca95be7e99c15cc2996c6c9d841e54b79425 |
 |  |   |   |  |  |  
 
 
